@@ -1,0 +1,1819 @@
+{
+  "edges": [
+    {
+      "similarity": 0.5609,
+      "source": "andean_paramo",
+      "target": "belize_reef"
+    },
+    {
+      "similarity": 0.54215,
+      "source": "andean_paramo",
+      "target": "colorado_canyon_country"
+    },
+    {
+      "similarity": 0.55897,
+      "source": "andean_paramo",
+      "target": "colorado_upper_basin"
+    },
+    {
+      "similarity": 0.56306,
+      "source": "andean_paramo",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.66699,
+      "source": "barents_sea",
+      "target": "belize_reef"
+    },
+    {
+      "similarity": 0.62863,
+      "source": "barents_sea",
+      "target": "catskills_watershed"
+    },
+    {
+      "similarity": 0.66334,
+      "source": "barents_sea",
+      "target": "galapagos_marine"
+    },
+    {
+      "similarity": 0.62966,
+      "source": "barents_sea",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.69189,
+      "source": "belize_reef",
+      "target": "galapagos_marine"
+    },
+    {
+      "similarity": 0.65962,
+      "source": "belize_reef",
+      "target": "great_barrier_reef"
+    },
+    {
+      "similarity": 0.659,
+      "source": "belize_reef",
+      "target": "new_mexico_rangeland"
+    },
+    {
+      "similarity": 0.57754,
+      "source": "borneo_dipterocarp",
+      "target": "galapagos_marine"
+    },
+    {
+      "similarity": 0.56729,
+      "source": "borneo_dipterocarp",
+      "target": "great_barrier_reef"
+    },
+    {
+      "similarity": 0.61879,
+      "source": "borneo_dipterocarp",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.56435,
+      "source": "canadian_boreal",
+      "target": "catskills_watershed"
+    },
+    {
+      "similarity": 0.56774,
+      "source": "canadian_boreal",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.57129,
+      "source": "canadian_boreal",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.61911,
+      "source": "catskills_watershed",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.58776,
+      "source": "catskills_watershed",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.64258,
+      "source": "colorado_canyon_country",
+      "target": "colorado_upper_basin"
+    },
+    {
+      "similarity": 0.58827,
+      "source": "colorado_canyon_country",
+      "target": "oriente_cloud_forest"
+    },
+    {
+      "similarity": 0.57968,
+      "source": "colorado_lower_basin",
+      "target": "colorado_upper_basin"
+    },
+    {
+      "similarity": 0.65733,
+      "source": "colorado_lower_basin",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.56835,
+      "source": "colorado_lower_basin",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.67303,
+      "source": "colorado_upper_basin",
+      "target": "umkhomazi_catchment"
+    },
+    {
+      "similarity": 0.62173,
+      "source": "colorado_upper_basin",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.65255,
+      "source": "coral_triangle_raja_ampat",
+      "target": "galapagos_marine"
+    },
+    {
+      "similarity": 0.6576,
+      "source": "coral_triangle_raja_ampat",
+      "target": "new_mexico_rangeland"
+    },
+    {
+      "similarity": 0.6412,
+      "source": "coral_triangle_raja_ampat",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.63264,
+      "source": "galapagos_marine",
+      "target": "new_mexico_rangeland"
+    },
+    {
+      "similarity": 0.65703,
+      "source": "great_barrier_reef",
+      "target": "morona_amazon_foothills"
+    },
+    {
+      "similarity": 0.63475,
+      "source": "great_barrier_reef",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.58733,
+      "source": "morona_amazon_foothills",
+      "target": "port_of_santos"
+    },
+    {
+      "similarity": 0.63247,
+      "source": "morona_amazon_foothills",
+      "target": "serengeti_mara"
+    },
+    {
+      "similarity": 0.66086,
+      "source": "morona_amazon_foothills",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.60093,
+      "source": "oriente_cloud_forest",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.61912,
+      "source": "oriente_cloud_forest",
+      "target": "umkhomazi_catchment"
+    },
+    {
+      "similarity": 0.62738,
+      "source": "oriente_cloud_forest",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.54553,
+      "source": "port_of_santos",
+      "target": "serengeti_mara"
+    },
+    {
+      "similarity": 0.59478,
+      "source": "port_of_santos",
+      "target": "wadden_sea"
+    },
+    {
+      "similarity": 0.63301,
+      "source": "serengeti_mara",
+      "target": "southern_california_wui"
+    },
+    {
+      "similarity": 0.62428,
+      "source": "serengeti_mara",
+      "target": "umkhomazi_catchment"
+    },
+    {
+      "similarity": 0.63731,
+      "source": "southern_california_wui",
+      "target": "wadden_sea"
+    }
+  ],
+  "meta": {
+    "caveat": "structural similarity only; not taxonomic; not calibrated",
+    "library_name": "Cross-Biome Reference Library",
+    "n_nodes": 20,
+    "public_version_label": null
+  },
+  "nodes": [
+    {
+      "category": "Andean paramo",
+      "composite_risk_score": 0.5218,
+      "flagship": false,
+      "fragility_ratio": 1.1995,
+      "hidden_keystones": 0,
+      "id": "andean_paramo",
+      "k_max": 18,
+      "label": "Andean Paramo (Chingaza)",
+      "n_edges": 783,
+      "n_species": 87,
+      "public_label": "Andean Paramo",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 18,
+          "n": 37
+        },
+        {
+          "k": 17,
+          "n": 6
+        },
+        {
+          "k": 16,
+          "n": 1
+        },
+        {
+          "k": 15,
+          "n": 2
+        },
+        {
+          "k": 13,
+          "n": 1
+        },
+        {
+          "k": 8,
+          "n": 8
+        },
+        {
+          "k": 7,
+          "n": 9
+        },
+        {
+          "k": 6,
+          "n": 2
+        },
+        {
+          "k": 5,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 7
+        },
+        {
+          "k": 2,
+          "n": 4
+        },
+        {
+          "k": 1,
+          "n": 8
+        }
+      ],
+      "x": 1.0,
+      "y": -0.15043
+    },
+    {
+      "category": "Arctic marine shelf",
+      "composite_risk_score": 0.3077,
+      "flagship": false,
+      "fragility_ratio": 1.0367,
+      "hidden_keystones": 0,
+      "id": "barents_sea",
+      "k_max": 37,
+      "label": "Barents Sea Arctic Marine Shelf",
+      "n_edges": 4014,
+      "n_species": 120,
+      "public_label": "Barents Sea",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 37,
+          "n": 85
+        },
+        {
+          "k": 34,
+          "n": 11
+        },
+        {
+          "k": 33,
+          "n": 1
+        },
+        {
+          "k": 32,
+          "n": 2
+        },
+        {
+          "k": 31,
+          "n": 2
+        },
+        {
+          "k": 30,
+          "n": 3
+        },
+        {
+          "k": 29,
+          "n": 3
+        },
+        {
+          "k": 21,
+          "n": 1
+        },
+        {
+          "k": 20,
+          "n": 2
+        },
+        {
+          "k": 19,
+          "n": 1
+        },
+        {
+          "k": 18,
+          "n": 2
+        },
+        {
+          "k": 16,
+          "n": 1
+        },
+        {
+          "k": 14,
+          "n": 1
+        },
+        {
+          "k": 11,
+          "n": 1
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 6,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 1
+        }
+      ],
+      "x": 0.35894,
+      "y": -0.38087
+    },
+    {
+      "category": "Marine coral reef",
+      "composite_risk_score": 0.4595,
+      "flagship": false,
+      "fragility_ratio": 1.0455,
+      "hidden_keystones": 1,
+      "id": "belize_reef",
+      "k_max": 31,
+      "label": "Belize Barrier Reef & Mesoamerican Reef System",
+      "n_edges": 1814,
+      "n_species": 100,
+      "public_label": "Belize Reef",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 31,
+          "n": 71
+        },
+        {
+          "k": 30,
+          "n": 2
+        },
+        {
+          "k": 29,
+          "n": 7
+        },
+        {
+          "k": 28,
+          "n": 3
+        },
+        {
+          "k": 27,
+          "n": 1
+        },
+        {
+          "k": 26,
+          "n": 1
+        },
+        {
+          "k": 14,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 4
+        },
+        {
+          "k": 1,
+          "n": 9
+        }
+      ],
+      "x": 0.62375,
+      "y": -0.6421
+    },
+    {
+      "category": "Tropical dipterocarp forest",
+      "composite_risk_score": 0.5629,
+      "flagship": false,
+      "fragility_ratio": 1.5443,
+      "hidden_keystones": 0,
+      "id": "borneo_dipterocarp",
+      "k_max": 16,
+      "label": "Borneo Dipterocarp Lowland Forest",
+      "n_edges": 887,
+      "n_species": 94,
+      "public_label": "Borneo Dipterocarp",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 16,
+          "n": 33
+        },
+        {
+          "k": 15,
+          "n": 12
+        },
+        {
+          "k": 14,
+          "n": 8
+        },
+        {
+          "k": 13,
+          "n": 2
+        },
+        {
+          "k": 12,
+          "n": 13
+        },
+        {
+          "k": 11,
+          "n": 3
+        },
+        {
+          "k": 10,
+          "n": 1
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 8
+        },
+        {
+          "k": 1,
+          "n": 11
+        }
+      ],
+      "x": -0.64709,
+      "y": -0.79224
+    },
+    {
+      "category": "Boreal carbon sink",
+      "composite_risk_score": 0.4639,
+      "flagship": false,
+      "fragility_ratio": 1.1834,
+      "hidden_keystones": 0,
+      "id": "canadian_boreal",
+      "k_max": 14,
+      "label": "Canadian Boreal Hudson Bay Lowlands",
+      "n_edges": 1506,
+      "n_species": 120,
+      "public_label": "Canadian Boreal",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 14,
+          "n": 45
+        },
+        {
+          "k": 13,
+          "n": 5
+        },
+        {
+          "k": 12,
+          "n": 9
+        },
+        {
+          "k": 11,
+          "n": 2
+        },
+        {
+          "k": 10,
+          "n": 9
+        },
+        {
+          "k": 9,
+          "n": 4
+        },
+        {
+          "k": 8,
+          "n": 10
+        },
+        {
+          "k": 7,
+          "n": 6
+        },
+        {
+          "k": 6,
+          "n": 7
+        },
+        {
+          "k": 5,
+          "n": 8
+        },
+        {
+          "k": 4,
+          "n": 4
+        },
+        {
+          "k": 3,
+          "n": 3
+        },
+        {
+          "k": 2,
+          "n": 4
+        },
+        {
+          "k": 1,
+          "n": 4
+        }
+      ],
+      "x": -0.1985,
+      "y": 0.93731
+    },
+    {
+      "category": "Temperate watershed",
+      "composite_risk_score": 0.4209,
+      "flagship": false,
+      "fragility_ratio": 1.1534,
+      "hidden_keystones": 0,
+      "id": "catskills_watershed",
+      "k_max": 29,
+      "label": "NYC Catskill/Ashokan Watershed",
+      "n_edges": 2918,
+      "n_species": 166,
+      "public_label": "Catskills",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 29,
+          "n": 67
+        },
+        {
+          "k": 28,
+          "n": 7
+        },
+        {
+          "k": 27,
+          "n": 6
+        },
+        {
+          "k": 26,
+          "n": 8
+        },
+        {
+          "k": 25,
+          "n": 4
+        },
+        {
+          "k": 24,
+          "n": 2
+        },
+        {
+          "k": 23,
+          "n": 5
+        },
+        {
+          "k": 21,
+          "n": 1
+        },
+        {
+          "k": 20,
+          "n": 1
+        },
+        {
+          "k": 18,
+          "n": 1
+        },
+        {
+          "k": 17,
+          "n": 3
+        },
+        {
+          "k": 16,
+          "n": 31
+        },
+        {
+          "k": 15,
+          "n": 1
+        },
+        {
+          "k": 14,
+          "n": 5
+        },
+        {
+          "k": 13,
+          "n": 2
+        },
+        {
+          "k": 12,
+          "n": 1
+        },
+        {
+          "k": 10,
+          "n": 2
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 8,
+          "n": 2
+        },
+        {
+          "k": 7,
+          "n": 2
+        },
+        {
+          "k": 6,
+          "n": 2
+        },
+        {
+          "k": 5,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 3
+        },
+        {
+          "k": 3,
+          "n": 2
+        },
+        {
+          "k": 2,
+          "n": 4
+        },
+        {
+          "k": 1,
+          "n": 2
+        }
+      ],
+      "x": -0.69795,
+      "y": -0.16632
+    },
+    {
+      "category": "Plateau canyon system",
+      "composite_risk_score": 0.5079,
+      "flagship": false,
+      "fragility_ratio": 1.3388,
+      "hidden_keystones": 0,
+      "id": "colorado_canyon_country",
+      "k_max": 13,
+      "label": "Colorado Canyon Country",
+      "n_edges": 696,
+      "n_species": 73,
+      "public_label": "Colorado Canyon Country",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 13,
+          "n": 29
+        },
+        {
+          "k": 12,
+          "n": 3
+        },
+        {
+          "k": 11,
+          "n": 3
+        },
+        {
+          "k": 10,
+          "n": 1
+        },
+        {
+          "k": 9,
+          "n": 3
+        },
+        {
+          "k": 6,
+          "n": 15
+        },
+        {
+          "k": 5,
+          "n": 3
+        },
+        {
+          "k": 4,
+          "n": 4
+        },
+        {
+          "k": 3,
+          "n": 6
+        },
+        {
+          "k": 2,
+          "n": 2
+        },
+        {
+          "k": 1,
+          "n": 4
+        }
+      ],
+      "x": 0.87121,
+      "y": 0.69343
+    },
+    {
+      "category": "Sonoran desert terminus",
+      "composite_risk_score": 0.5277,
+      "flagship": false,
+      "fragility_ratio": 1.3669,
+      "hidden_keystones": 0,
+      "id": "colorado_lower_basin",
+      "k_max": 17,
+      "label": "Colorado Lower Basin",
+      "n_edges": 914,
+      "n_species": 82,
+      "public_label": "Colorado Lower Basin",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 17,
+          "n": 34
+        },
+        {
+          "k": 16,
+          "n": 2
+        },
+        {
+          "k": 15,
+          "n": 3
+        },
+        {
+          "k": 14,
+          "n": 4
+        },
+        {
+          "k": 13,
+          "n": 4
+        },
+        {
+          "k": 12,
+          "n": 3
+        },
+        {
+          "k": 11,
+          "n": 3
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 8
+        },
+        {
+          "k": 3,
+          "n": 8
+        },
+        {
+          "k": 2,
+          "n": 7
+        },
+        {
+          "k": 1,
+          "n": 4
+        }
+      ],
+      "x": 0.82199,
+      "y": 0.19434
+    },
+    {
+      "category": "Montane headwaters",
+      "composite_risk_score": 0.4897,
+      "flagship": false,
+      "fragility_ratio": 1.2722,
+      "hidden_keystones": 0,
+      "id": "colorado_upper_basin",
+      "k_max": 17,
+      "label": "Colorado Upper Basin Headwaters",
+      "n_edges": 1007,
+      "n_species": 90,
+      "public_label": "Colorado Upper Basin",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 17,
+          "n": 33
+        },
+        {
+          "k": 16,
+          "n": 5
+        },
+        {
+          "k": 15,
+          "n": 2
+        },
+        {
+          "k": 14,
+          "n": 4
+        },
+        {
+          "k": 13,
+          "n": 3
+        },
+        {
+          "k": 12,
+          "n": 3
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 8,
+          "n": 4
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 6,
+          "n": 14
+        },
+        {
+          "k": 5,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 5
+        },
+        {
+          "k": 3,
+          "n": 4
+        },
+        {
+          "k": 2,
+          "n": 1
+        },
+        {
+          "k": 1,
+          "n": 8
+        }
+      ],
+      "x": 0.4532,
+      "y": 0.70353
+    },
+    {
+      "category": "Indo-Pacific reef hotspot",
+      "composite_risk_score": 0.5526,
+      "flagship": false,
+      "fragility_ratio": 1.2401,
+      "hidden_keystones": 0,
+      "id": "coral_triangle_raja_ampat",
+      "k_max": 35,
+      "label": "Coral Triangle (Raja Ampat)",
+      "n_edges": 2314,
+      "n_species": 112,
+      "public_label": "Coral Triangle",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 35,
+          "n": 87
+        },
+        {
+          "k": 31,
+          "n": 1
+        },
+        {
+          "k": 29,
+          "n": 1
+        },
+        {
+          "k": 26,
+          "n": 6
+        },
+        {
+          "k": 23,
+          "n": 1
+        },
+        {
+          "k": 22,
+          "n": 4
+        },
+        {
+          "k": 21,
+          "n": 2
+        },
+        {
+          "k": 13,
+          "n": 1
+        },
+        {
+          "k": 9,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 2
+        },
+        {
+          "k": 1,
+          "n": 3
+        }
+      ],
+      "x": -0.03365,
+      "y": -0.93731
+    },
+    {
+      "category": "Island marine reserve",
+      "composite_risk_score": 0.5306,
+      "flagship": false,
+      "fragility_ratio": 1.397,
+      "hidden_keystones": 3,
+      "id": "galapagos_marine",
+      "k_max": 28,
+      "label": "Galapagos Marine Reserve",
+      "n_edges": 1973,
+      "n_species": 105,
+      "public_label": "Galapagos Marine",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 28,
+          "n": 67
+        },
+        {
+          "k": 27,
+          "n": 5
+        },
+        {
+          "k": 26,
+          "n": 5
+        },
+        {
+          "k": 25,
+          "n": 11
+        },
+        {
+          "k": 24,
+          "n": 1
+        },
+        {
+          "k": 23,
+          "n": 7
+        },
+        {
+          "k": 21,
+          "n": 2
+        },
+        {
+          "k": 18,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 1,
+          "n": 5
+        }
+      ],
+      "x": 0.24012,
+      "y": -0.8571
+    },
+    {
+      "category": "Indo-Pacific coral reef",
+      "composite_risk_score": 0.5831,
+      "flagship": false,
+      "fragility_ratio": 1.5979,
+      "hidden_keystones": 0,
+      "id": "great_barrier_reef",
+      "k_max": 30,
+      "label": "Great Barrier Reef",
+      "n_edges": 1872,
+      "n_species": 112,
+      "public_label": "Great Barrier Reef",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 30,
+          "n": 71
+        },
+        {
+          "k": 29,
+          "n": 1
+        },
+        {
+          "k": 28,
+          "n": 5
+        },
+        {
+          "k": 27,
+          "n": 1
+        },
+        {
+          "k": 25,
+          "n": 1
+        },
+        {
+          "k": 22,
+          "n": 2
+        },
+        {
+          "k": 21,
+          "n": 4
+        },
+        {
+          "k": 18,
+          "n": 1
+        },
+        {
+          "k": 17,
+          "n": 10
+        },
+        {
+          "k": 5,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 3
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 2
+        },
+        {
+          "k": 1,
+          "n": 8
+        }
+      ],
+      "x": -0.29143,
+      "y": -0.56825
+    },
+    {
+      "category": "Amazon foothills",
+      "composite_risk_score": 0.4216,
+      "flagship": false,
+      "fragility_ratio": 1.1042,
+      "hidden_keystones": 0,
+      "id": "morona_amazon_foothills",
+      "k_max": 21,
+      "label": "Morona Santiago Amazon & Andean Foothills",
+      "n_edges": 1073,
+      "n_species": 92,
+      "public_label": "Morona Amazon Foothills",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 21,
+          "n": 49
+        },
+        {
+          "k": 19,
+          "n": 2
+        },
+        {
+          "k": 18,
+          "n": 2
+        },
+        {
+          "k": 16,
+          "n": 6
+        },
+        {
+          "k": 15,
+          "n": 5
+        },
+        {
+          "k": 14,
+          "n": 1
+        },
+        {
+          "k": 13,
+          "n": 5
+        },
+        {
+          "k": 12,
+          "n": 4
+        },
+        {
+          "k": 11,
+          "n": 2
+        },
+        {
+          "k": 10,
+          "n": 2
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 8,
+          "n": 1
+        },
+        {
+          "k": 6,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 3,
+          "n": 1
+        },
+        {
+          "k": 2,
+          "n": 5
+        },
+        {
+          "k": 1,
+          "n": 4
+        }
+      ],
+      "x": -0.47944,
+      "y": 0.09211
+    },
+    {
+      "category": "Semi-arid rangeland",
+      "composite_risk_score": 0.5725,
+      "flagship": false,
+      "fragility_ratio": 1.1517,
+      "hidden_keystones": 0,
+      "id": "new_mexico_rangeland",
+      "k_max": 9,
+      "label": "New Mexico Semi-Arid Rangelands",
+      "n_edges": 200,
+      "n_species": 26,
+      "public_label": "New Mexico Rangeland",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 9,
+          "n": 21
+        },
+        {
+          "k": 8,
+          "n": 1
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 1
+        },
+        {
+          "k": 1,
+          "n": 2
+        }
+      ],
+      "x": 0.60407,
+      "y": -0.89037
+    },
+    {
+      "category": "Cloud forest watershed",
+      "composite_risk_score": 0.4285,
+      "flagship": true,
+      "fragility_ratio": 1.1214,
+      "hidden_keystones": 0,
+      "id": "oriente_cloud_forest",
+      "k_max": 23,
+      "label": "Oriente Antioqueno Cloud Forest",
+      "n_edges": 1033,
+      "n_species": 91,
+      "public_label": "Oriente Cloud Forest",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 23,
+          "n": 52
+        },
+        {
+          "k": 20,
+          "n": 2
+        },
+        {
+          "k": 19,
+          "n": 1
+        },
+        {
+          "k": 18,
+          "n": 2
+        },
+        {
+          "k": 16,
+          "n": 2
+        },
+        {
+          "k": 15,
+          "n": 1
+        },
+        {
+          "k": 11,
+          "n": 4
+        },
+        {
+          "k": 10,
+          "n": 2
+        },
+        {
+          "k": 9,
+          "n": 1
+        },
+        {
+          "k": 8,
+          "n": 3
+        },
+        {
+          "k": 7,
+          "n": 8
+        },
+        {
+          "k": 6,
+          "n": 2
+        },
+        {
+          "k": 5,
+          "n": 3
+        },
+        {
+          "k": 3,
+          "n": 2
+        },
+        {
+          "k": 2,
+          "n": 1
+        },
+        {
+          "k": 1,
+          "n": 5
+        }
+      ],
+      "x": 0.38755,
+      "y": 0.22624
+    },
+    {
+      "category": "Estuarine-forest interface",
+      "composite_risk_score": 0.4093,
+      "flagship": false,
+      "fragility_ratio": 1.0594,
+      "hidden_keystones": 8,
+      "id": "port_of_santos",
+      "k_max": 16,
+      "label": "Port of Santos Estuarine System & Atlantic Forest Interface",
+      "n_edges": 1082,
+      "n_species": 118,
+      "public_label": "Port of Santos",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 16,
+          "n": 39
+        },
+        {
+          "k": 14,
+          "n": 4
+        },
+        {
+          "k": 13,
+          "n": 1
+        },
+        {
+          "k": 11,
+          "n": 28
+        },
+        {
+          "k": 10,
+          "n": 14
+        },
+        {
+          "k": 8,
+          "n": 1
+        },
+        {
+          "k": 7,
+          "n": 2
+        },
+        {
+          "k": 6,
+          "n": 4
+        },
+        {
+          "k": 5,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 5
+        },
+        {
+          "k": 3,
+          "n": 9
+        },
+        {
+          "k": 2,
+          "n": 5
+        },
+        {
+          "k": 1,
+          "n": 4
+        }
+      ],
+      "x": -1.0,
+      "y": 0.42758
+    },
+    {
+      "category": "Savanna grassland",
+      "composite_risk_score": 0.5367,
+      "flagship": false,
+      "fragility_ratio": 1.3052,
+      "hidden_keystones": 0,
+      "id": "serengeti_mara",
+      "k_max": 19,
+      "label": "Serengeti-Mara Savanna",
+      "n_edges": 1670,
+      "n_species": 120,
+      "public_label": "Serengeti-Mara",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 19,
+          "n": 47
+        },
+        {
+          "k": 18,
+          "n": 4
+        },
+        {
+          "k": 17,
+          "n": 1
+        },
+        {
+          "k": 16,
+          "n": 2
+        },
+        {
+          "k": 15,
+          "n": 2
+        },
+        {
+          "k": 14,
+          "n": 3
+        },
+        {
+          "k": 13,
+          "n": 3
+        },
+        {
+          "k": 12,
+          "n": 4
+        },
+        {
+          "k": 11,
+          "n": 20
+        },
+        {
+          "k": 10,
+          "n": 1
+        },
+        {
+          "k": 9,
+          "n": 3
+        },
+        {
+          "k": 8,
+          "n": 5
+        },
+        {
+          "k": 7,
+          "n": 7
+        },
+        {
+          "k": 6,
+          "n": 3
+        },
+        {
+          "k": 5,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 2
+        },
+        {
+          "k": 3,
+          "n": 2
+        },
+        {
+          "k": 2,
+          "n": 3
+        },
+        {
+          "k": 1,
+          "n": 7
+        }
+      ],
+      "x": -0.42302,
+      "y": 0.48357
+    },
+    {
+      "category": "Mediterranean WUI",
+      "composite_risk_score": 0.4767,
+      "flagship": false,
+      "fragility_ratio": 1.1637,
+      "hidden_keystones": 2,
+      "id": "southern_california_wui",
+      "k_max": 26,
+      "label": "Southern California Wildland-Urban Interface",
+      "n_edges": 2077,
+      "n_species": 108,
+      "public_label": "Southern California WUI",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 26,
+          "n": 52
+        },
+        {
+          "k": 25,
+          "n": 5
+        },
+        {
+          "k": 24,
+          "n": 3
+        },
+        {
+          "k": 23,
+          "n": 3
+        },
+        {
+          "k": 22,
+          "n": 4
+        },
+        {
+          "k": 21,
+          "n": 2
+        },
+        {
+          "k": 20,
+          "n": 5
+        },
+        {
+          "k": 19,
+          "n": 6
+        },
+        {
+          "k": 18,
+          "n": 2
+        },
+        {
+          "k": 17,
+          "n": 2
+        },
+        {
+          "k": 16,
+          "n": 2
+        },
+        {
+          "k": 15,
+          "n": 1
+        },
+        {
+          "k": 14,
+          "n": 1
+        },
+        {
+          "k": 13,
+          "n": 2
+        },
+        {
+          "k": 11,
+          "n": 1
+        },
+        {
+          "k": 10,
+          "n": 1
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 5,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 2
+        },
+        {
+          "k": 3,
+          "n": 5
+        },
+        {
+          "k": 1,
+          "n": 6
+        }
+      ],
+      "x": -0.0613,
+      "y": -0.20049
+    },
+    {
+      "category": "Afromontane watershed",
+      "composite_risk_score": 0.6401,
+      "flagship": true,
+      "fragility_ratio": 1.6635,
+      "hidden_keystones": 2,
+      "id": "umkhomazi_catchment",
+      "k_max": 25,
+      "label": "uMkhomazi Water Catchment",
+      "n_edges": 1922,
+      "n_species": 157,
+      "public_label": "uMkhomazi Catchment",
+      "risk_tier": "BB",
+      "shells": [
+        {
+          "k": 25,
+          "n": 61
+        },
+        {
+          "k": 24,
+          "n": 8
+        },
+        {
+          "k": 23,
+          "n": 3
+        },
+        {
+          "k": 20,
+          "n": 2
+        },
+        {
+          "k": 19,
+          "n": 4
+        },
+        {
+          "k": 18,
+          "n": 1
+        },
+        {
+          "k": 17,
+          "n": 2
+        },
+        {
+          "k": 16,
+          "n": 1
+        },
+        {
+          "k": 15,
+          "n": 1
+        },
+        {
+          "k": 14,
+          "n": 1
+        },
+        {
+          "k": 13,
+          "n": 1
+        },
+        {
+          "k": 12,
+          "n": 1
+        },
+        {
+          "k": 11,
+          "n": 2
+        },
+        {
+          "k": 10,
+          "n": 4
+        },
+        {
+          "k": 9,
+          "n": 28
+        },
+        {
+          "k": 8,
+          "n": 3
+        },
+        {
+          "k": 7,
+          "n": 2
+        },
+        {
+          "k": 6,
+          "n": 1
+        },
+        {
+          "k": 5,
+          "n": 2
+        },
+        {
+          "k": 4,
+          "n": 4
+        },
+        {
+          "k": 3,
+          "n": 13
+        },
+        {
+          "k": 2,
+          "n": 9
+        },
+        {
+          "k": 1,
+          "n": 3
+        }
+      ],
+      "x": 0.1392,
+      "y": 0.7327
+    },
+    {
+      "category": "Tidal flat coupled-marine",
+      "composite_risk_score": 0.3492,
+      "flagship": false,
+      "fragility_ratio": 1.0429,
+      "hidden_keystones": 0,
+      "id": "wadden_sea",
+      "k_max": 30,
+      "label": "Wadden Sea Tidal Flats",
+      "n_edges": 2913,
+      "n_species": 112,
+      "public_label": "Wadden Sea",
+      "risk_tier": "BBB",
+      "shells": [
+        {
+          "k": 30,
+          "n": 55
+        },
+        {
+          "k": 29,
+          "n": 3
+        },
+        {
+          "k": 28,
+          "n": 3
+        },
+        {
+          "k": 27,
+          "n": 6
+        },
+        {
+          "k": 26,
+          "n": 3
+        },
+        {
+          "k": 25,
+          "n": 3
+        },
+        {
+          "k": 24,
+          "n": 1
+        },
+        {
+          "k": 23,
+          "n": 1
+        },
+        {
+          "k": 22,
+          "n": 1
+        },
+        {
+          "k": 21,
+          "n": 4
+        },
+        {
+          "k": 20,
+          "n": 4
+        },
+        {
+          "k": 18,
+          "n": 1
+        },
+        {
+          "k": 17,
+          "n": 2
+        },
+        {
+          "k": 15,
+          "n": 1
+        },
+        {
+          "k": 12,
+          "n": 2
+        },
+        {
+          "k": 11,
+          "n": 4
+        },
+        {
+          "k": 10,
+          "n": 4
+        },
+        {
+          "k": 9,
+          "n": 2
+        },
+        {
+          "k": 8,
+          "n": 2
+        },
+        {
+          "k": 7,
+          "n": 1
+        },
+        {
+          "k": 6,
+          "n": 3
+        },
+        {
+          "k": 5,
+          "n": 1
+        },
+        {
+          "k": 4,
+          "n": 2
+        },
+        {
+          "k": 3,
+          "n": 2
+        },
+        {
+          "k": 1,
+          "n": 1
+        }
+      ],
+      "x": -0.10056,
+      "y": 0.26485
+    }
+  ]
+}

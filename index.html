@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Ecologist - the living network, and where it breaks first</title>
+  <meta name="description" content="AI Ecologist reconstructs an ecosystem's interaction network from a species list, finds where it is structurally load-bearing, and routes the result into a decision. A structural ecological intelligence engine." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Ccircle cx='6' cy='7' r='3' fill='%231aa89b'/%3E%3Ccircle cx='19' cy='6' r='3' fill='%233ad6a3'/%3E%3Ccircle cx='9' cy='20' r='3.4' fill='%23e8694d'/%3E%3C/svg%3E" />
+
+  <!-- Open Graph / Twitter for premium link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Ecologist - the living network, and where it breaks first" />
+  <meta property="og:description" content="Turn a species list into structural ecological intelligence. Find the few species that hold an ecosystem together, and where it fails first." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:site_name" content="AI Ecologist" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Ecologist - structural ecological intelligence" />
+  <meta name="twitter:description" content="The living network, and where it breaks first." />
+  <meta name="twitter:image" content="assets/og.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#scene-reconstruct" class="skip-nav">Skip to the reconstruction</a>
+
+  <header class="site-header">
+    <a class="lockup" href="#scene-hero" aria-label="AI Ecologist, home">
+      <svg class="glyph" viewBox="0 0 26 26" aria-hidden="true">
+        <line x1="6" y1="7" x2="19" y2="6" stroke="#1aa89b" stroke-width="1.3" opacity="0.8"/>
+        <line x1="6" y1="7" x2="9" y2="20" stroke="#1aa89b" stroke-width="1.3" opacity="0.8"/>
+        <line x1="19" y1="6" x2="9" y2="20" stroke="#1aa89b" stroke-width="1.3" opacity="0.55"/>
+        <circle cx="6" cy="7" r="3" fill="#1aa89b"/>
+        <circle cx="19" cy="6" r="3" fill="#3ad6a3"/>
+        <circle cx="9" cy="20" r="3.4" fill="#e8694d"/>
+      </svg>
+      <span class="lockup__name">
+        <span class="lockup__product">AI Ecologist</span>
+        <span class="lockup__sep">·</span>
+        <span class="gol">structural ecological intelligence engine</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="primary">
+      <a href="#scene-anatomy">Anatomy</a>
+      <a href="#scene-atlas">Atlas</a>
+      <a href="#scene-ladder">What we claim</a>
+      <a href="report/index.html">Brief</a>
+      <a href="#ask" class="nav-cta">Start a pilot</a>
+    </nav>
+  </header>
+
+  <main id="scenes"><!-- scene sections injected by main.js from config.js --></main>
+
+  <section class="ask" id="ask"><!-- injected by main.js --></section>
+
+  <nav class="rail" id="rail" aria-label="scene navigation"><!-- injected --></nav>
+
+  <div class="atlas-tip" id="atlas-tip" role="status" aria-live="polite"></div>
+
+  <footer class="claimbar" id="claimbar"><!-- injected --></footer>
+
+  <noscript>
+    <div class="noscript-banner">
+      <div>
+        <h1>AI Ecologist</h1>
+        <p>This page uses interactive visuals that need JavaScript. The full
+        written brief is available without scripts.</p>
+        <p><a href="report/index.html">Read the brief</a></p>
+      </div>
+    </div>
+  </noscript>
+
+  <!-- offline: everything vendored, no CDN -->
+  <script src="vendor/p5.min.js"></script>
+  <script src="lib/prng.js"></script>
+  <script src="lib/scene-base.js"></script>
+  <script src="config.js"></script>
+  <script src="scenes/hero.js"></script>
+  <script src="scenes/stakes.js"></script>
+  <script src="scenes/blindspot.js"></script>
+  <script src="scenes/reconstruct.js"></script>
+  <script src="scenes/anatomy.js"></script>
+  <script src="scenes/atlas.js"></script>
+  <script src="scenes/rewiring.js"></script>
+  <script src="scenes/ladder.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
