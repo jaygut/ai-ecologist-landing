@@ -65,7 +65,7 @@ window.CFG = {
       copyPos: "tr",
       eyebrow: "The blind spot",
       title: "Inventories everywhere. Decisions nowhere.",
-      body: "Counts, richness, and diversity map what is present. They are blind to what is load-bearing, where the system fails first, and which action buys the most resilience. The connections are real. Today they go unmeasured.",
+      body: "A species count can read healthy while the system underneath comes apart. Counts and diversity scores measure what is present, not what is load-bearing. Watch the score hold its grade while the structure loses the few species holding it together.",
       badge: { kind: "illustrative", label: "Illustrative" },
     },
     {
@@ -160,6 +160,28 @@ window.CFG = {
         { v: "658", k: "time windows" },
       ],
       badge: { kind: "real", label: "Real metric, illustrated mechanism" },
+    },
+    {
+      id: "engine",
+      rail: "The engine",
+      module: "engine",
+      copyPos: "tr",
+      eyebrow: "Inside the engine",
+      title: "Not a chatbot over ecology. A multilayered engine.",
+      body: "Reading an ecosystem is not a text problem. Machine reasoning is one bounded layer, checked against ecological rules and the structure of the network itself. The reconstruction stands on decades of food-web and network science, and it is benchmarked, not asserted. The decision layer is deterministic, owned, and reproducible.",
+      readouts: [
+        { v: "0.95", k: "benchmarked accuracy", cls: "is-teal" },
+        { v: "deterministic", k: "decision layer" },
+        { v: "owned", k: "auditable and reproducible" },
+      ],
+      badge: { kind: "real", label: "How it works" },
+      layers: [
+        { name: "A species inventory", sub: "the only input required", accent: "#3ad6a3" },
+        { name: "Evidence, tiered", sub: "observed, recorded, inferred, expected", accent: "#1aa89b" },
+        { name: "Neuro-symbolic reconstruction", sub: "machine reasoning, checked against ecological rules", accent: "#a78bfa", chip: "bounded" },
+        { name: "Structural intelligence", sub: "k-core, fragility, cascade, grounded in network science", accent: "#f2a24e" },
+        { name: "A deterministic decision", sub: "owned, auditable, reproducible", accent: "#e8694d" },
+      ],
     },
     {
       id: "ladder",

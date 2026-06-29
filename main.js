@@ -163,7 +163,7 @@
     CFG.scenes.forEach(function (s, i) {
       var section = el("section", "scene");
       if (s.id === "hero") section.classList.add("scene--short");
-      if (s.id === "anatomy") section.classList.add("scene--tall");
+      if (s.id === "anatomy" || s.id === "engine") section.classList.add("scene--tall");
       section.id = "scene-" + s.id;
       section.setAttribute("data-scene", s.id);
       section.setAttribute("aria-label", s.eyebrow);

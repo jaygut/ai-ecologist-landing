@@ -1,57 +1,154 @@
-/* Blind spot: a flat grid of species dots (the inventory everyone holds).
-   The hidden interactions flicker underneath and vanish, the point being that
-   the connections are real but unmeasured. Muted, almost no accent. */
+/* The blind spot (the aha). A species count and an intactness score read healthy
+   and never move. Underneath, the interaction network loses its load-bearing
+   species and comes apart into disconnected pieces. The conventional metric
+   cannot see it. Illustrative, by design. */
 (function () {
   (window.SCENES = window.SCENES || {})["blindspot"] = function (holder, ctx) {
-    var st = { t: 0, dots: [], links: [] };
+    var st = { t: 0, nodes: [], intra: [], inter: [], clusters: [], cx: 0, cy: 0 };
     var rng = ctx.prng;
+    var NCLUST = 4, PER = 17, NKEY = 3;
+    var COUNT = 248; // illustrative species count
 
     function layout(p) {
-      st.dots = [];
-      var cols = Math.max(7, Math.floor(p.width / 86));
-      var rows = Math.max(5, Math.floor(p.height / 96));
-      var mx = p.width * 0.12, my = p.height * 0.2;
-      var gw = (p.width - mx * 2) / (cols - 1), gh = (p.height - my * 2) / (rows - 1);
-      for (var r = 0; r < rows; r++) {
-        for (var c = 0; c < cols; c++) {
-          st.dots.push({ x: mx + c * gw + rng.jitter(5), y: my + r * gh + rng.jitter(5) });
-        }
-      }
-      // hidden links between random nearby dots
-      st.links = [];
-      for (var i = 0; i < st.dots.length; i++) {
-        for (var k = 0; k < 2; k++) {
-          var j = rng.int(0, st.dots.length - 1);
-          if (j !== i && Math.hypot(st.dots[i].x - st.dots[j].x, st.dots[i].y - st.dots[j].y) < gw * 2.4) {
-            st.links.push({ a: i, b: j, ph: rng.range(0, 6.28), sp: rng.range(0.5, 1.6) });
-          }
-        }
-      }
       st.w = p.width; st.h = p.height;
+      st.cx = p.width * 0.5; st.cy = p.height * 0.52;
+      var ringR = Math.min(p.width, p.height) * 0.17;
+      // cluster centres around the scene centre (intact = pulled inward)
+      st.clusters = [];
+      for (var c = 0; c < NCLUST; c++) {
+        var a = (Math.PI * 2 * c) / NCLUST - Math.PI / 2;
+        st.clusters.push({ ang: a, dir: { x: Math.cos(a), y: Math.sin(a) }, baseR: ringR });
+      }
+      st.nodes = [];
+      // member nodes per cluster
+      for (var ci = 0; ci < NCLUST; ci++) {
+        var cl = st.clusters[ci];
+        for (var k = 0; k < PER; k++) {
+          var rr = rng.range(8, ringR * 0.72), aa = rng.range(0, Math.PI * 2);
+          st.nodes.push({
+            cluster: ci, key: false,
+            ox: Math.cos(aa) * rr, oy: Math.sin(aa) * rr, // offset from cluster centre
+            sz: rng.range(3.2, 5.2),
+          });
+        }
+      }
+      // keystone bridge nodes near the centre, each linking 2-3 clusters
+      st.keys = [];
+      for (var kk = 0; kk < NKEY; kk++) {
+        var idx = st.nodes.length;
+        st.nodes.push({ cluster: -1, key: true, ox: rng.jitter(ringR * 0.25), oy: rng.jitter(ringR * 0.25), sz: 7.5, kid: kk });
+        st.keys.push(idx);
+      }
+      // intra-cluster edges
+      st.intra = [];
+      for (var a2 = 0; a2 < st.nodes.length; a2++) {
+        if (st.nodes[a2].key) continue;
+        for (var r = 0; r < 2; r++) {
+          var b = rng.int(0, st.nodes.length - 1);
+          if (b !== a2 && !st.nodes[b].key && st.nodes[b].cluster === st.nodes[a2].cluster) st.intra.push([a2, b]);
+        }
+      }
+      // inter-cluster edges THROUGH keystones (the bridges that fail)
+      st.inter = [];
+      st.keys.forEach(function (ki, n2) {
+        for (var t2 = 0; t2 < 10; t2++) {
+          var b2 = rng.int(0, st.nodes.length - 1);
+          if (!st.nodes[b2].key) st.inter.push([ki, b2]);
+        }
+      });
+    }
+
+    function nodePos(n, frag) {
+      var cl = n.cluster >= 0 ? st.clusters[n.cluster] : null;
+      // keystones collapse toward centre and fade; clusters drift outward on frag
+      if (!cl) return { x: st.cx + n.ox, y: st.cy + n.oy };
+      var drift = (0.15 + frag * 1.25) * cl.baseR;
+      return { x: st.cx + cl.dir.x * drift + n.ox, y: st.cy + cl.dir.y * drift + n.oy };
     }
 
     function render(p) {
       SB.ground(p, p.width, p.height);
-      SB.instrumentGrid(p, p.width, p.height, { step: 64, alpha: 22 });
+      SB.instrumentGrid(p, p.width, p.height, { step: 70, alpha: 16 });
+      if (!st.nodes.length) { SB.label(p, "loading", 24, p.height - 24); return; }
       var t = st.t;
-      // links emerge as t rises (the unmeasured web becoming visible)
-      var reveal = SB.smoothstep(SB.win01(t, 0.25, 0.95));
+      var web = SB.smoothstep(SB.win01(t, 0.18, 0.42)); // hidden network resolves
+      var frag = SB.smoothstep(SB.win01(t, 0.52, 0.96)); // keystones fail, web fragments
+
+      var pos = st.nodes.map(function (n) { return nodePos(n, frag); });
+
+      // intra-cluster edges (survive; dim a touch as the system degrades)
+      var teal = SB.hexToRgb(GOL.teal);
       p.strokeWeight(1);
-      st.links.forEach(function (l) {
-        var a = st.dots[l.a], b = st.dots[l.b];
-        var flick = ctx.reduced ? 0.6 : (0.4 + 0.6 * Math.abs(Math.sin(p.frameCount * 0.02 * l.sp + l.ph)));
-        var alpha = 46 * reveal * flick;
-        p.stroke(26, 168, 155, alpha);
-        p.line(a.x, a.y, b.x, b.y);
+      st.intra.forEach(function (e) {
+        var A = pos[e[0]], B = pos[e[1]];
+        p.stroke(teal[0], teal[1], teal[2], 34 * web * (1 - frag * 0.5));
+        p.line(A.x, A.y, B.x, B.y);
       });
-      // the dots: the flat inventory, always present, muted
+      // inter-cluster bridge edges through keystones (these break)
+      st.inter.forEach(function (e) {
+        var A = pos[e[0]], B = pos[e[1]];
+        p.stroke(teal[0], teal[1], teal[2], 40 * web * (1 - frag));
+        p.line(A.x, A.y, B.x, B.y);
+      });
+
+      // nodes
       p.noStroke();
-      st.dots.forEach(function (d) {
-        p.fill(120, 140, 150, 150);
-        p.circle(d.x, d.y, 5.2);
+      st.nodes.forEach(function (n, i) {
+        var P = pos[i];
+        if (n.key) {
+          // keystone: load-bearing, then fails (goes coral then dark)
+          var alive = 1 - frag;
+          if (web > 0.2) SB.glow(p, P.x, P.y, n.sz, frag > 0.4 ? GOL.coral : GOL.green, 90 * web * Math.max(0.25, alive));
+          var c = SB.hexToRgb(frag > 0.4 ? GOL.coral : GOL.green);
+          p.fill(c[0], c[1], c[2], 235 * Math.max(0.2, alive));
+          p.circle(P.x, P.y, n.sz * 2);
+        } else {
+          var dim = 1 - frag * 0.55;
+          p.fill(150, 165, 175, 210 * dim);
+          p.circle(P.x, P.y, n.sz * 2);
+        }
       });
-      SB.cornerBrackets(p, p.width, p.height, { alpha: 55, color: GOL.faint });
-      SB.vignette(p, p.width, p.height, 0.82);
+
+      // the conventional metric: counted, and PASSING, and never moving
+      drawScoreCard(p, web);
+
+      // the aha line
+      if (frag > 0.25) {
+        var a = SB.smoothstep(SB.win01(t, 0.62, 0.85)) * 255;
+        p.push();
+        p.textFont("IBM Plex Sans"); p.textStyle(p.BOLD); p.textAlign(p.CENTER, p.CENTER);
+        p.textSize(Math.min(30, p.width * 0.026));
+        p.fill(234, 242, 242, a);
+        p.text("Same count. Same score. A different system.", p.width * 0.5, p.height * 0.9);
+        p.textStyle(p.NORMAL); p.textSize(13); p.fill(143, 163, 173, a);
+        p.text("The metric never moved. The structure came apart.", p.width * 0.5, p.height * 0.9 + 30);
+        p.pop();
+      }
+
+      SB.cornerBrackets(p, p.width, p.height, { alpha: 50, color: GOL.faint });
+      SB.vignette(p, p.width, p.height, 0.8);
+    }
+
+    function drawScoreCard(p, web) {
+      var x = p.width < 760 ? p.width * 0.5 - 130 : 56, y = p.height * 0.14, w = 260;
+      p.push();
+      p.noStroke(); p.fill(11, 32, 48, 220);
+      p.rect(x, y, w, 104, 12);
+      p.stroke(21, 41, 58, 255); p.strokeWeight(1); p.noFill(); p.rect(x, y, w, 104, 12);
+      // count
+      p.noStroke();
+      p.textFont("IBM Plex Mono"); p.textAlign(p.LEFT, p.BASELINE);
+      p.fill(234, 242, 242, 255); p.textSize(46); p.text(COUNT, x + 20, y + 56);
+      p.fill(143, 163, 173, 255); p.textSize(11); p.text("SPECIES COUNTED", x + 22, y + 74);
+      // a green PASS pill that never changes
+      var g = SB.hexToRgb(GOL.green);
+      p.fill(g[0], g[1], g[2], 30); p.rect(x + 150, y + 22, 92, 26, 13);
+      p.noFill(); p.stroke(g[0], g[1], g[2], 200); p.strokeWeight(1); p.rect(x + 150, y + 22, 92, 26, 13);
+      p.noStroke(); p.fill(g[0], g[1], g[2], 255); p.textSize(11); p.textAlign(p.CENTER, p.CENTER);
+      p.text("INTACTNESS PASS", x + 196, y + 35);
+      p.textAlign(p.LEFT, p.BASELINE); p.fill(143, 163, 173, 220); p.textSize(10.5);
+      p.text("diversity high", x + 152, y + 74);
+      p.pop();
     }
 
     var inst = new p5(function (p) {
