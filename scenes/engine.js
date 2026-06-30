@@ -84,7 +84,7 @@
         }
       });
 
-      SB.label(p, "DATA RISES.  EVERY LAYER IS AUDITABLE.  NO OUTSIDE MODEL MAKES THE CALL.", st.plates[0].x, p.height - 22, { color: GOL.muted, size: 11 });
+      SB.label(p, "CONNECTIVITY ACROSS A MAP MEANS CORRIDORS.  WE MEASURE WHETHER THE WEB ITSELF HOLDS.", st.plates[0].x, p.height - 22, { color: GOL.muted, size: 11 });
       SB.cornerBrackets(p, p.width, p.height, { alpha: 56 });
       SB.vignette(p, p.width, p.height, 0.72);
     }

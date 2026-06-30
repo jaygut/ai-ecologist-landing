@@ -40,7 +40,7 @@ window.CFG = {
       body: "Give the engine a species list. It reconstructs the web of interactions behind it, then finds the few species that hold the whole system together.",
       chips: [
         { v: "AI Ecologist" },
-        { v: "Benchmarked reconstruction, owned decision logic" },
+        { v: "The structural reading of ecosystem condition" },
       ],
       badge: { kind: "illustrative", label: "Illustrative" },
     },
@@ -50,8 +50,8 @@ window.CFG = {
       module: "stakes",
       copyPos: "tl",
       eyebrow: "The stakes",
-      title: "When the web fails, the cost lands on a balance sheet.",
-      body: "A cloud forest above Medellin catches fog and feeds up to 60% of the city's drinking water. The biological network that keeps it working sits on no ledger, and conventional surveys cannot see it.",
+      title: "A cloud forest waters a city. The web holding it up is real.",
+      body: "A cloud forest above Medellin catches fog and feeds up to 60% of the city's drinking water. The interaction web that keeps it working is real and benchmarked. When it fails, the cost lands downstream, on a balance sheet, as a clearly tiered estimate.",
       readouts: [
         { v: "60%", k: "of one city's water", cls: "is-teal" },
         { v: "4M", k: "people downstream" },
@@ -63,9 +63,9 @@ window.CFG = {
       rail: "Blind spot",
       module: "blindspot",
       copyPos: "tr",
-      eyebrow: "The blind spot",
+      eyebrow: "What 'condition' means",
       title: "Inventories everywhere. Decisions nowhere.",
-      body: "A species count can read healthy while the system underneath comes apart. Counts and diversity scores measure what is present, not what is load-bearing. Watch the score hold its grade while the structure loses the few species holding it together.",
+      body: "Three ways to read an ecosystem: how much is there, what is present, and whether it holds. The rules now require the third, ecosystem condition, yet leave the metric undefined. A score can read healthy while the structure underneath comes apart.",
       badge: { kind: "illustrative", label: "Illustrative" },
     },
     {
@@ -169,7 +169,7 @@ window.CFG = {
       copyPos: "tr",
       eyebrow: "Inside the engine",
       title: "Not a chatbot over ecology. A multilayered engine.",
-      body: "Reading an ecosystem is not a text problem. Machine reasoning is one bounded layer, checked against ecological rules and the structure of the network itself. The reconstruction stands on decades of food-web and network science, and it is benchmarked, not asserted. The decision layer is deterministic, owned, and reproducible.",
+      body: "Reading an ecosystem is not a text problem. Machine reasoning is one bounded layer, checked against ecological rules and the structure of the network itself. It is the structural layer beneath the screening tools you already use, benchmarked and deterministic, where no outside model makes the call.",
       readouts: [
         { v: "0.95", k: "benchmarked accuracy", cls: "is-teal" },
         { v: "deterministic", k: "decision layer" },
@@ -191,7 +191,7 @@ window.CFG = {
       copyPos: "tl",
       eyebrow: "What we claim",
       title: "Benchmarked where it counts. Prototype where it is not.",
-      body: "Every interaction carries an evidence tier. The structural layer is benchmarked and reproducible. The financial layer is a screening prototype, and we never dress it up as calibrated.",
+      body: "Every interaction carries an evidence tier. The structural layer is benchmarked, deterministic, and reproducible, a condition reading built to survive an audit, not a score you have to trust. The financial layer is a screening prototype, and we never dress it up as calibrated.",
       badge: { kind: "real", label: "Real labels" },
       tiers: [
         { k: "Observed", on: false },
@@ -226,7 +226,7 @@ window.CFG = {
       { k: "Managed access", v: "Inputs in, evidence out, through an interface you query. The engine stays owned." },
       { k: "Partnership", v: "Back the vulnerability layer beneath the nature-intelligence stack." },
     ],
-    why: "Disclosure is turning into obligation. Finance and insurance need to know where and why an ecosystem fails before it does, in language a risk committee can act on.",
+    why: "The rules now require companies to report whether an ecosystem is healthy. They do not say how to measure it. A benchmarked, audit-grade structural reading is the answer that gap has been missing.",
     factsheet: {
       title: "Verified snapshot",
       rows: [

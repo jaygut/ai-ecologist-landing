@@ -121,7 +121,7 @@
         p.fill(234, 242, 242, a);
         p.text("Same count. Same score. A different system.", p.width * 0.5, p.height * 0.9);
         p.textStyle(p.NORMAL); p.textSize(13); p.fill(143, 163, 173, a);
-        p.text("The metric never moved. The structure came apart.", p.width * 0.5, p.height * 0.9 + 30);
+        p.text("The count never moved. Condition is whether the structure holds.", p.width * 0.5, p.height * 0.9 + 30);
         p.pop();
       }
 
