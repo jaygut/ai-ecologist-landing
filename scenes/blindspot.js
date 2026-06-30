@@ -130,24 +130,27 @@
     }
 
     function drawScoreCard(p, web) {
-      var x = p.width < 760 ? p.width * 0.5 - 130 : 56, y = p.height * 0.14, w = 260;
+      var w = 300, h = 108;
+      var x = p.width < 820 ? p.width * 0.5 - w / 2 : 56, y = p.height * 0.13;
       p.push();
-      p.noStroke(); p.fill(11, 32, 48, 220);
-      p.rect(x, y, w, 104, 12);
-      p.stroke(21, 41, 58, 255); p.strokeWeight(1); p.noFill(); p.rect(x, y, w, 104, 12);
-      // count
+      p.noStroke(); p.fill(11, 32, 48, 222); p.rect(x, y, w, h, 12);
+      p.noFill(); p.stroke(21, 41, 58, 255); p.strokeWeight(1); p.rect(x, y, w, h, 12);
       p.noStroke();
+      // count (left)
       p.textFont("IBM Plex Mono"); p.textAlign(p.LEFT, p.BASELINE);
-      p.fill(234, 242, 242, 255); p.textSize(46); p.text(COUNT, x + 20, y + 56);
-      p.fill(143, 163, 173, 255); p.textSize(11); p.text("SPECIES COUNTED", x + 22, y + 74);
-      // a green PASS pill that never changes
+      p.fill(234, 242, 242, 255); p.textSize(46); p.text(COUNT, x + 22, y + 58);
+      p.fill(143, 163, 173, 255); p.textSize(11); p.text("SPECIES COUNTED", x + 24, y + 80);
+      // intactness label + a green PASS pill that never changes (right)
       var g = SB.hexToRgb(GOL.green);
-      p.fill(g[0], g[1], g[2], 30); p.rect(x + 150, y + 22, 92, 26, 13);
-      p.noFill(); p.stroke(g[0], g[1], g[2], 200); p.strokeWeight(1); p.rect(x + 150, y + 22, 92, 26, 13);
-      p.noStroke(); p.fill(g[0], g[1], g[2], 255); p.textSize(11); p.textAlign(p.CENTER, p.CENTER);
-      p.text("INTACTNESS PASS", x + 196, y + 35);
+      var px0 = x + w - 116, py0 = y + 22, pw = 92, ph = 28;
+      p.fill(143, 163, 173, 220); p.textSize(10); p.textAlign(p.LEFT, p.BASELINE);
+      p.text("INTACTNESS", px0, py0 - 5);
+      p.noStroke(); p.fill(g[0], g[1], g[2], 32); p.rect(px0, py0, pw, ph, 14);
+      p.noFill(); p.stroke(g[0], g[1], g[2], 205); p.strokeWeight(1); p.rect(px0, py0, pw, ph, 14);
+      p.noStroke(); p.fill(g[0], g[1], g[2], 255); p.textSize(14); p.textAlign(p.CENTER, p.CENTER);
+      p.text("PASS", px0 + pw / 2, py0 + ph / 2 + 1);
       p.textAlign(p.LEFT, p.BASELINE); p.fill(143, 163, 173, 220); p.textSize(10.5);
-      p.text("diversity high", x + 152, y + 74);
+      p.text("diversity high", px0, y + 80);
       p.pop();
     }
 

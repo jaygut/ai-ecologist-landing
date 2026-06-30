@@ -146,6 +146,7 @@
 
       // legend
       SB.label(p, "EACH BURST IS ONE ECOSYSTEM  /  GOLD CORE = LOAD-BEARING, BLUE RIM = WEAKLY ATTACHED", 26, 30, { color: GOL.muted, size: 11 });
+      SB.label(p, "GREEN RING: THE TWO FLAGSHIP WATERSHED CASES, TAKEN FROM A SPECIES LIST TO A DECISION", 26, 49, { color: GOL.green, size: 11 });
       SB.label(p, "PLACED BY STRUCTURAL SIMILARITY, NOT TAXONOMIC OVERLAP", 26, p.height - 26, { color: GOL.muted, size: 11 });
       SB.vignette(p, p.width, p.height, 0.76);
     }

@@ -124,7 +124,7 @@ window.CFG = {
         { key: "background", label: "Background", count: 51, color: "#586b77" },
       ],
       keynote: {
-        lede: "Twelve hummingbirds sit in the deepest core. The puma sits outside it.",
+        lede: "Fourteen nectar-feeders sit in the deepest core, eleven of them hummingbirds. The puma sits outside it.",
         body: "The sword-billed hummingbird is seated at the maximum k-shell. The apex predators, the puma and the black-and-chestnut eagle, sit two shells shallower. The species with the highest removal impact of all are the soil's recyclers, a dung beetle and the leaf-cutter ants. Conservation aimed at the charismatic few can miss the structural foundation.",
       },
       slider: {
