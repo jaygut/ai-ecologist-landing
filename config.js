@@ -117,6 +117,7 @@ window.CFG = {
       },
       classes: [
         { key: "all", label: "All classes", count: 91, color: "#8fa3ad" },
+        { key: "nectar", label: "Nectar-feeders in core", count: 14, color: "#3ad6a3" },
         { key: "hub", label: "High-centrality hubs", count: 9, color: "#1aa89b" },
         { key: "connector", label: "Connectors", count: 6, color: "#a78bfa" },
         { key: "apex", label: "Top-trophic", count: 9, color: "#e8694d" },
