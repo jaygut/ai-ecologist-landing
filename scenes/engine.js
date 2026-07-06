@@ -1,8 +1,8 @@
-/* The engine (the moat). A multilayered stack, input at the base, a deterministic
+/* The engine. A multilayered stack, input at the base, a deterministic
    decision at the top. Machine reasoning is one bounded layer in the middle,
    checked against ecological rules and network structure. Data rises through the
-   stack and each layer lights in turn. This is the "not an LLM wrapper" scene:
-   the value is the layered reconstruction and the owned, reproducible decision
+   stack and each layer lights in turn. The value is the layered reconstruction
+   and the owned, reproducible decision
    layer, grounded in ecological and network science. Layer copy lives in config. */
 (function () {
   (window.SCENES = window.SCENES || {})["engine"] = function (holder, ctx) {

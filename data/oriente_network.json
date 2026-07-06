@@ -4134,7 +4134,6 @@
     }
   ],
   "meta": {
-    "algebraic_connectivity": 0.7797,
     "apex_nodes": [
       "Aotus lemurinus",
       "Cathartes aura",
@@ -4155,21 +4154,16 @@
       "producer": 16
     },
     "composite_risk_v4": 0.4285,
-    "connectance": 0.25226,
     "core_fraction": 0.57143,
     "core_size": 52,
     "evidence_status": "fully inferred reconstruction",
-    "fragility_ratio": 1.1214,
     "hero_node": "Ensifera ensifera",
     "k_max": 23,
-    "modularity_Q": 0.1409,
     "n_edges": 1033,
     "n_isolates_dropped": 14,
     "n_modules": 3,
     "n_nodes": 91,
-    "r50_targeted": 0.4615,
-    "risk_tier_v4": "BBB (Invest Grade)",
-    "trophic_coherence_q": 0.5154
+    "risk_tier_v4": "BBB (Invest Grade)"
   },
   "nodes": [
     {

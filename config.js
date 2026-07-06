@@ -2,7 +2,7 @@
    SINGLE SOURCE OF TRUTH.
    Every number, snapshot date, and line of copy lives here and is injected
    into the DOM by main.js. To update the page after a new engine run, edit
-   THIS file only. Every figure traces to an internal digest and the exported data.
+   THIS file only. Every figure traces to the exported case data.
    House style: no em-dashes, no jargon or tool names in rendered copy.
    ========================================================================== */
 window.CFG = {
@@ -93,24 +93,24 @@ window.CFG = {
       // the instrument panel, class chips, keynote and slider are rendered from below
       badge: { kind: "real", label: "Real data" },
       intro:
-        "Distance from the centre is k-core depth. Each wedge is a detected module. Pick a class to isolate its members and the interactions they carry.",
+        "Distance from the centre shows how deep a species sits in the network's tightest, most interconnected core. Each wedge is a cluster the engine found on its own. Pick a class to isolate its members and the interactions they carry.",
       panel: {
         eyebrow: ["STRUCTURAL INTEGRITY", "EXPLORATORY", "INFERRED"],
         score: 57,
         scoreNote: "0 to 100, higher is sounder",
         tier: "BBB · Investment grade",
         desc:
-          "A fully reconstructed structural reading, not a condition grade. Fragility alone would read this forest as prime. The composite refuses to average that one strong axis over the weak ones: connectivity and modularity both read fragile, so the tier holds at the network's weakest dimension and never averages a weak link away.",
+          "A fully reconstructed structural reading, not a condition grade. Fragility alone would read this forest as prime. The composite does not let one strong dimension paper over weak ones. How well the web holds together and how cleanly it clusters both read fragile, so the grade stays pinned to the network's weakest dimension rather than smoothing it away.",
         bar: { value: 57, scale: ["0 Critical", "30", "50", "70", "85", "100"] },
         cards: [
-          { v: "23", k: "k-core depth", d: "deepest cohesive shell" },
+          { v: "23", k: "Core depth", d: "how many layers deep the tightest core runs" },
           { v: "52", k: "Core taxa", d: "57% of the web" },
-          { v: "25.2%", k: "Connectance", d: "realised of possible links" },
-          { v: "3", k: "Modules", d: "Q = 0.14" },
-          { v: "0.78", k: "Algebraic conn.", d: "Fiedler value, cohesion" },
-          { v: "46%", k: "Robustness R50", d: "targeted removals to fragment" },
-          { v: "1.12", k: "Fragility ratio", d: "random over targeted" },
-          { v: "0.84", k: "Weakest axis", d: "connectivity holds the tier" },
+          { v: "25.2%", k: "Wiring density", d: "share of possible links that actually exist" },
+          { v: "3", k: "Clusters", d: "how cleanly the web splits into groups" },
+          { v: "0.78", k: "Cohesion", d: "how hard the web is to split apart" },
+          { v: "46%", k: "Robustness", d: "share of key species you would have to remove before the web breaks apart" },
+          { v: "1.12", k: "Fragility", d: "how much worse a smart attack is than random loss" },
+          { v: "0.84", k: "Weakest axis", d: "the dimension keeping the score down" },
         ],
         callout:
           "A hypothesis, not a verdict. Computed on a network that is fully reconstructed, all 1,033 interactions inferred, none yet observed in the field. There is no observed interaction tier for the reconstruction gate to anchor on, so this is an exploratory structural reading.",
@@ -125,8 +125,8 @@ window.CFG = {
         { key: "background", label: "Background", count: 51, color: "#586b77" },
       ],
       keynote: {
-        lede: "Fourteen nectar-feeders sit in the deepest core, eleven of them hummingbirds. The puma sits outside it.",
-        body: "The sword-billed hummingbird is seated at the maximum k-shell. The apex predators, the puma and the black-and-chestnut eagle, sit two shells shallower. The species with the highest removal impact of all are the soil's recyclers, a dung beetle and the leaf-cutter ants. Conservation aimed at the charismatic few can miss the structural foundation.",
+        lede: "Fourteen nectar-feeders sit at the very centre of the web, eleven of them hummingbirds. The puma sits further out.",
+        body: "The sword-billed hummingbird sits at the very centre of the web. The apex predators, the puma and the black-and-chestnut eagle, sit a couple of layers further out. The species with the highest removal impact of all are the soil's recyclers, a dung beetle and the leaf-cutter ants. Conservation aimed at the charismatic few can miss the structural foundation.",
       },
       slider: {
         label: "Remove the deepest core species, watch the web answer",
@@ -155,9 +155,9 @@ window.CFG = {
       copyPos: "tr",
       eyebrow: "Change over time",
       title: "The system is changing shape.",
-      body: "Compare two states of the same network and the engine reports what persisted, what turned over, and how the core reorganised. On a published record it reproduced the whole-network change signal almost exactly. It quantifies change. It does not forecast it.",
+      body: "Compare two states of the same network and the engine reports what stayed the same, what was replaced, and how the central group of species shifted. On a published record it reproduced the whole-network change signal almost exactly. It quantifies change. It does not forecast it.",
       readouts: [
-        { v: "0.99999", k: "reproduced change signal", cls: "is-teal" },
+        { v: "0.99999", k: "match to a known change record", cls: "is-teal" },
         { v: "658", k: "time windows" },
       ],
       badge: { kind: "real", label: "Real metric, illustrated mechanism" },
@@ -169,7 +169,7 @@ window.CFG = {
       copyPos: "tr",
       eyebrow: "Inside the engine",
       title: "Not a chatbot over ecology. A multilayered engine.",
-      body: "Reading an ecosystem is not a text problem. Machine reasoning is one bounded layer, checked against ecological rules and the structure of the network itself. It is the structural layer beneath the screening tools you already use, benchmarked and deterministic, where no outside model makes the call.",
+      body: "Reading an ecosystem is not a text problem. Machine reasoning does one bounded job, and every call it makes is checked against known ecological rules and the shape of the network itself. It is the structural layer beneath the screening tools you already use, benchmarked and deterministic, where no outside model makes the call.",
       readouts: [
         { v: "0.95", k: "benchmarked accuracy", cls: "is-teal" },
         { v: "deterministic", k: "decision layer" },
@@ -178,9 +178,9 @@ window.CFG = {
       badge: { kind: "real", label: "How it works" },
       layers: [
         { name: "A species inventory", sub: "the only input required", accent: "#3ad6a3" },
-        { name: "Evidence, tiered", sub: "observed, recorded, inferred, expected", accent: "#1aa89b" },
+        { name: "Evidence, ranked by strength", sub: "seen in the field, on record, inferred, or expected", accent: "#1aa89b" },
         { name: "Neuro-symbolic reconstruction", sub: "machine reasoning, checked against ecological rules", accent: "#a78bfa", chip: "bounded" },
-        { name: "Structural intelligence", sub: "k-core, fragility, cascade, grounded in network science", accent: "#f2a24e" },
+        { name: "Structural intelligence", sub: "the load-bearing core, weak points, and knock-on failures, grounded in network science", accent: "#f2a24e" },
         { name: "A deterministic decision", sub: "owned, auditable, reproducible", accent: "#e8694d" },
       ],
     },
