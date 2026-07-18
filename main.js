@@ -178,6 +178,25 @@
         );
       });
       block.appendChild(items);
+
+      // link the panel to the dial: hovering or focusing a tier raises its ring
+      block.setAttribute("tabindex", "0");
+      block.setAttribute("aria-label", tier.k + ". " + tier.note);
+      var raise = function () {
+        var inst = instances[s.id];
+        if (inst && inst._setActiveRing) inst._setActiveRing(i);
+        block.classList.add("is-active");
+      };
+      var clear = function () {
+        var inst = instances[s.id];
+        if (inst && inst._setActiveRing) inst._setActiveRing(-1);
+        block.classList.remove("is-active");
+      };
+      block.addEventListener("mouseenter", raise);
+      block.addEventListener("mouseleave", clear);
+      block.addEventListener("focus", raise);
+      block.addEventListener("blur", clear);
+
       wrap.appendChild(block);
     });
     if (s.note) wrap.appendChild(el("p", "iset__note", esc(s.note)));
