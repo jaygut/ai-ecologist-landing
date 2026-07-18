@@ -157,13 +157,40 @@
     stage.appendChild(kn);
   }
 
+
+  // ---- instruments-specific DOM (tiered capability map) --------------------
+  function buildInstrumentsDOM(stage, s) {
+    var wrap = el("div", "iset");
+    var TIER_CLS = ["is-ax1", "is-ax2", "is-ax3", "is-ax4"];
+    (s.tiers || []).forEach(function (tier, i) {
+      var block = el("div", "iset__tier " + (TIER_CLS[i] || ""));
+      block.appendChild(
+        el("div", "iset__head",
+          "<b>" + esc(tier.k) + "</b><span>" + esc(tier.note) + "</span>")
+      );
+      var items = el("div", "iset__items");
+      (tier.items || []).forEach(function (it) {
+        var srcCls = it.src === "ours" ? "is-ours" : (it.src.indexOf("ours") === 0 ? "is-ours" : "is-pub");
+        items.appendChild(
+          el("div", "iset__item",
+            "<b>" + esc(it.k) + "</b><span>" + esc(it.d) + "</span>" +
+            "<i class='iset__src " + srcCls + "'>" + esc(it.src) + "</i>")
+        );
+      });
+      block.appendChild(items);
+      wrap.appendChild(block);
+    });
+    if (s.note) wrap.appendChild(el("p", "iset__note", esc(s.note)));
+    stage.appendChild(wrap);
+  }
+
   // ---- build all scene sections from config --------------------------------
   function buildScenes() {
     var host = document.getElementById("scenes");
     CFG.scenes.forEach(function (s, i) {
       var section = el("section", "scene");
       if (s.id === "hero") section.classList.add("scene--short");
-      if (s.id === "anatomy" || s.id === "engine") section.classList.add("scene--tall");
+      if (s.id === "anatomy" || s.id === "engine" || s.id === "instruments") section.classList.add("scene--tall");
       section.id = "scene-" + s.id;
       section.setAttribute("data-scene", s.id);
       section.setAttribute("aria-label", s.eyebrow);
@@ -178,6 +205,9 @@
 
       if (s.module === "anatomy") {
         buildAnatomyDOM(stage, s);
+      }
+      if (s.module === "instruments") {
+        buildInstrumentsDOM(stage, s);
       }
 
       section.appendChild(stage);

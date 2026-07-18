@@ -471,3 +471,35 @@ a:hover { text-decoration: underline; }
   position: fixed; inset: 0; z-index: 999; background: var(--bg); color: var(--text);
   display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px;
 }
+
+/* ---- instrument set (capability map), scene: instruments ------------------ */
+.iset {
+  position: absolute; right: 3vw; top: 50%; transform: translateY(-50%);
+  width: min(640px, 52vw); max-height: 84vh;
+  display: flex; flex-direction: column; gap: 10px; z-index: 3;
+}
+.iset__tier { border: 1px solid var(--hairline); border-radius: 12px; background: rgba(11,32,48,.85); padding: 11px 13px 12px; }
+.iset__tier.is-ax1 { border-left: 3px solid var(--green); }
+.iset__tier.is-ax2 { border-left: 3px solid var(--teal); }
+.iset__tier.is-ax3 { border-left: 3px solid var(--purple); }
+.iset__tier.is-ax4 { border-left: 3px solid var(--amber); }
+.iset__head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.iset__head b { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .09em; text-transform: uppercase; color: var(--text); }
+.iset__head span { font-size: 11px; color: var(--muted); }
+.iset__items { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 16px; }
+.iset__tier.is-ax1 .iset__items { grid-template-columns: 1fr 1fr; }
+.iset__item { display: grid; grid-template-columns: 1fr auto; gap: 1px 8px; align-items: baseline; }
+.iset__item b { font-size: 12px; color: var(--text); font-weight: 600; line-height: 1.25; }
+.iset__item span { grid-column: 1 / 2; font-size: 10.5px; color: var(--muted); line-height: 1.35; }
+.iset__src {
+  grid-column: 2 / 3; grid-row: 1 / 2; font-style: normal;
+  font-family: "IBM Plex Mono", monospace; font-size: 8.5px; letter-spacing: .04em;
+  padding: 1px 5px; border-radius: 999px; white-space: nowrap;
+}
+.iset__src.is-pub { color: var(--teal); border: 1px solid rgba(26,168,155,.42); }
+.iset__src.is-ours { color: var(--amber); border: 1px solid rgba(242,162,78,.42); }
+.iset__note { font-size: 11px; color: var(--muted); line-height: 1.5; padding: 0 2px; }
+@media (max-width: 1100px) {
+  .iset { position: static; transform: none; width: auto; max-height: none; margin: 22px 0 0; }
+  .iset__items { grid-template-columns: 1fr; }
+}
