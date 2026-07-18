@@ -163,7 +163,16 @@ a:hover { text-decoration: underline; }
 .copy--center {
   top: 50%; left: 50%; transform: translate(-50%, -50%);
   text-align: center; border-left: none; border-top: 2px solid var(--teal);
+  max-width: 540px;
 }
+/* the readout row is built for side-anchored cards; in the centred hero it
+   wraps to one item per line, and flex-start then left-aligns the short one
+   while the long ones fill their row and read as centred. Stack and centre. */
+.copy--center .readouts {
+  flex-direction: column; align-items: center; gap: 15px; margin-top: 22px;
+}
+.copy--center .readout { align-items: center; gap: 3px; }
+.copy--center .readout__k { max-width: 34ch; }
 
 .eyebrow {
   font-family: var(--mono); font-size: 11px; font-weight: 600;
@@ -172,9 +181,12 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
 }
 .eyebrow .node { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 8px var(--teal); }
-.copy h2 { font-size: clamp(26px, 3.4vw, 40px); line-height: 1.08; margin-bottom: 12px; }
+.copy h2 {
+  font-size: clamp(26px, 3.4vw, 40px); line-height: 1.08; margin-bottom: 12px;
+  text-wrap: balance;
+}
 .copy h2 em { color: var(--green); font-style: normal; }
-.copy__body { color: #cdd9dd; font-size: clamp(14px, 1.15vw, 16px); line-height: 1.6; }
+.copy__body { color: #cdd9dd; font-size: clamp(14px, 1.15vw, 16px); line-height: 1.6; text-wrap: pretty; }
 .copy__body strong { color: var(--text); font-weight: 600; }
 
 /* readouts */

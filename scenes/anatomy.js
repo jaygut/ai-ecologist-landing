@@ -77,13 +77,45 @@
       if (n) n.textContent = st.removal; if (l) l.textContent = st.lccPct + "%"; if (sc) sc.textContent = st.secCount;
     }
 
+    /* Centre the shell figure in the band genuinely free at its widest point,
+       measured from the DOM rather than assumed. The keynote card sits in the
+       lower left starting almost exactly at the figure's vertical centre, so it
+       is a real horizontal obstacle, not just a bottom-corner one; the reading
+       panel bounds the right. Measuring both keeps the figure optically centred
+       AND clear of both cards at any viewport width, which a fixed fraction of
+       canvas width cannot do because the panel is a fixed pixel width. */
+    function freeBand(p) {
+      var lo = 0;
+      var hi = p.width;
+      var section = holder.closest ? holder.closest("section") : null;
+      if (section) {
+        var hr = holder.getBoundingClientRect();
+        var keyEl = section.querySelector(".keynote");
+        var panelEl = section.querySelector(".si-panel");
+        if (keyEl) {
+          var kr = keyEl.getBoundingClientRect();
+          // only an obstacle if it spans the figure's vertical mid-band
+          if (kr.width > 0 && kr.top - hr.top < p.height * 0.62) {
+            lo = Math.max(lo, kr.right - hr.left + 18);
+          }
+        }
+        if (panelEl) {
+          var pr = panelEl.getBoundingClientRect();
+          if (pr.width > 0 && pr.left > hr.left) hi = Math.min(hi, pr.left - hr.left - 18);
+        }
+      }
+      if (hi - lo < 260) { lo = 0; hi = p.width; }   // too tight to be useful
+      return { lo: lo, hi: hi, mid: (lo + hi) / 2, w: hi - lo };
+    }
+
     function layout(p) {
       st.w = p.width; st.h = p.height;
-      var panel = p.width > 980;
-      st.cx = p.width * (panel ? 0.36 : 0.5);
+      var wide = p.width > 980;
+      var band = wide ? freeBand(p) : { mid: p.width / 2, w: p.width };
+      st.cx = band.mid;
       st.cy = p.height * 0.52;
-      st.R = Math.min(p.width * (panel ? 0.62 : 0.92), p.height * 0.94) * 0.47;
-      st.Rz = Math.min(p.width * (panel ? 0.54 : 0.82), p.height * 0.86) * 0.44;
+      st.R = Math.min(band.w * 0.47, p.height * 0.94 * 0.47);
+      st.Rz = Math.min(band.w * 0.44, p.height * 0.86 * 0.44);
       if (!net) return;
       // core-zoom ring order: core nodes evenly on a big ring, sorted by id
       var coreIds = net.nodes.map(function (n, i) { return i; }).filter(function (i) { return net.nodes[i].coreness >= st.kmax; });
